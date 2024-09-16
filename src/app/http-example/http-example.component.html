@@ -1,0 +1,5 @@
+<label>Enter name to get message : </label><input type="text" [(ngModel)]="name">
+<br>
+<input type="button" value="Submit" (click)="getMessageFromHttpService()">
+<br>
+<label>Service response from backend is : {{serviceResponse}}</label>

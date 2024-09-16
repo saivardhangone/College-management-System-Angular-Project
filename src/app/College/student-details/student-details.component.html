@@ -1,0 +1,61 @@
+<h2>Student Details</h2>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Student Id
+            </th>
+            <th>
+                Student Name
+            </th>
+            <th>
+                Gender
+            </th>
+            <th>
+                Date of Birth
+            </th>
+            <th>
+                mobile Number
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                Branch Name
+            </th>
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor="let student of students">
+            <td>
+                {{student.id}}
+            </td>
+            <td>
+                {{student.familyName+" "+student.firstName}}
+            </td>
+            <td>
+                {{student.gender}}
+            </td>
+            <td>
+                {{student.dob |date}}
+            </td>
+            <td>
+                {{student.mobileNumber}}
+            </td>
+            <td>
+                {{student.email}}
+            </td>
+            <td>
+                {{student.address}}
+            </td>
+            <td>
+                {{student.branch.branchName}}
+            </td>
+            
+          
+        </tr>
+    </tbody>
+</table>

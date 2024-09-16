@@ -1,0 +1,29 @@
+<div>
+    <input type="button" value="dropdown" (click)="getCourses()" id="getCourses">
+    Courses:
+    
+    <select [(ngModel)]="courseName" >
+        <option *ngFor="let course of courses">{{course.courseName}}</option>
+    </select>
+   
+    Student Names:<select  [(ngModel)]="studentId">
+        <option *ngFor="let student of students" value={{student.id}}>{{student.firstName+student.lastName}}</option>
+        
+    </select>
+    Score:
+    <select [(ngModel)]="grade" >
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+        <option>F</option>           
+    </select>
+    
+
+    <input type="button" value="register" (click)="registerStudentResult()">
+        
+
+<div>
+    
+</div>

@@ -1,0 +1,24 @@
+<body>
+    <div ><app-college-header></app-college-header></div>
+    <div class="row">
+        <div class="col-lg-3">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" (click)="sliding()" id="slide">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+            <nav class="nav flex-column" *ngIf="hidden">
+            <a class="nav-link" routerLink="AcademicDetails"> Academics</a>
+            <a class="nav-link" routerLink="Academics"> Academic Registration</a>
+            <a class="nav-link" routerLink="students"> Students</a>  
+            <a class="nav-link" routerLink="studentRegister"> studentRegister</a> 
+            <a class="nav-link" routerLink="EmployeeRegister"> EmployeeRegister</a> 
+            <a class="nav-link" routerLink="EmployeeDetails"> EmployeeDetails</a>
+            <a class="nav-link" routerLink="FacultyRegister"> FacultyRegister</a>
+            <a class="nav-link" routerLink="" (click)="hide()"> exit</a>
+             </nav>
+        </div>
+        <div class="col-lg-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</body>

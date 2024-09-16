@@ -1,0 +1,50 @@
+<div id="academic">
+    <legend>Academic Registration</legend>
+
+    <div>
+        Academic Year :<input type="number" placeholder="AademicYear" [(ngModel)]="academicYear">
+    </div>
+
+    <div>
+        Semester: <input type="number" placeholder="semester" [(ngModel)]="semester">
+    </div>
+
+    <div>
+        StudentName:
+        <select [(ngModel)]="studentId">
+            <option selected>--select student--</option>
+            <option *ngFor="let student of students" [value]="student.id">{{student.familyName+" "+student.firstName}}
+            </option>
+        </select>
+    </div>
+    <div>
+        <input type="button" value="Register" (click)="register()">
+    </div>
+</div>
+<!--
+<div>
+    <form>
+        <fieldset>
+
+            <legend> Acadamic Registration</legend>
+            <label>acadamid registration:<input type="text" name="acadamic registration"></label>
+
+             <label>acadamid registration:<input type="text" name="acadamic registration"></label> 
+
+        </fieldset>
+
+
+        <fieldset>
+
+            <legend> student name</legend>
+            <label>student name:<input type="text" name="student name"></label>
+        </fieldset>
+
+        <fieldset>
+
+            <legend> semister</legend>
+            <label>semister:<input type="text" name="semister"></label>
+        </fieldset>
+
+    </form>
+</div> -->

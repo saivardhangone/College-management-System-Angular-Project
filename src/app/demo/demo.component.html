@@ -1,0 +1,13 @@
+<div>
+    <input type="text" >
+</div>
+<div (mouseenter)="handlemouseenter()">
+    Hover me
+
+</div>
+<div [ngStyle]="{'background-color': isHighlighted ? 'yellow':'transparent'}">
+<p>sandeep buyed a new scooty</p>{{numbers[2]}}
+
+</div>
+<span [textContent]="message"></span>
+<button (click) ="myfun()" [disabled]="isDisabled">clickme</button>

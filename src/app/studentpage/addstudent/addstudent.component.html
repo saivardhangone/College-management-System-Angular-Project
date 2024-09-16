@@ -1,0 +1,20 @@
+<div>
+    <div>
+       Student Id: <input type="number" placeholder="studentid" [(ngModel)]= "registerid" id="studentid">
+    </div>
+    <div>
+        First Name:<input type="text" placeholder="FirstName" [(ngModel)]= "firstname" id="firstname">
+    </div>
+    <div>
+        Last Name:<input type="text" placeholder="LastName" [(ngModel)]= "lastname" id="lastname" >
+    </div>
+    <div>
+        DOB:<input type="date" placeholder="FirstName" [(ngModel)]= "dateofbirth" id="date" >
+    </div>
+    <div>
+        Email Address:<input type="text" placeholder="email" [(ngModel)]= "emailadress" class="emailf">
+    </div>
+    <div>
+        <input type="button" value="Register" (click)="registerdetails()" >
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div id="academic">
+    <h2>Academic Student Details</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                AcademicId
+                </th>
+                <th>
+                Academic Year
+                </th>
+                <th>
+                    Semester
+                </th>
+                <th>
+                    Student Name
+                </th>
+                <th>
+                    Branch
+                </th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let academic of academics">
+                <td >
+                    {{academic.id}}
+                </td>
+                <td>
+                    {{academic.acdemicYear}}
+                </td>
+                <td>
+                    {{academic.semester}}
+                </td>
+                <td>
+                    {{academic.student.firstName}}{{academic.student.familyName}}
+                </td>
+                <td>
+                    {{academic.student.branch.branchName}}
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>

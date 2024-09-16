@@ -1,0 +1,11 @@
+<form>
+    <div>
+        MobileNumber:<input type="number"  [(ngModel)]="logingDetails.mobileNumber" name="mobileNumber">
+    </div>
+    <div>
+        Password:<input type="password" [(ngModel)]="logingDetails.password" name="password">
+    </div>
+    <div>
+        <input type="button" value="login" (click)="verifyLogin()" >
+    </div>
+</form>

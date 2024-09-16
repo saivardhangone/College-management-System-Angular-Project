@@ -1,0 +1,56 @@
+
+
+<h1>Employee Details</h1>
+<table>
+    <thead>
+        <tr>
+            <td>
+                Employee id
+            </td>
+            <td>
+                Employeename
+            </td>
+            <td>
+                Gender
+            </td>
+            <td>
+                Mobilenumber
+            </td>
+            <td>
+                Date of birth
+            </td>
+            <td>
+                Email
+            </td>
+            <td>
+                Address
+            </td>
+        </tr>
+    </thead>
+    <tbody *ngFor="let employee of employees">
+        <tr>
+            <td>
+                {{employee.employeeId}}
+            </td>
+            <td>
+                {{employee.familyName+" "+employee.firstName}}
+            </td>
+            <td>
+                {{employee.gender}}
+            </td>
+            <td>
+                {{employee.mobileNumber}}
+            </td>
+            <td>
+                {{employee.dob|date}}
+            </td>
+            <td>
+                {{employee.email}}
+            </td>
+            <td>
+                {{employee.email}}
+            </td>
+        </tr>
+        
+    </tbody>
+</table>

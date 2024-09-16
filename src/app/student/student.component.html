@@ -1,0 +1,9 @@
+<div style="background-color: burlywood;">
+    <app-menu [updateMessageFromParent]="updateStatus">
+    </app-menu>
+</div>
+<div style="background-color: cadetblue;">
+    <app-registration-form (updateItemEvent)="recieveChildMessageEvent($event)">
+
+    </app-registration-form>
+</div>

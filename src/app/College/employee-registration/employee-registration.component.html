@@ -1,0 +1,28 @@
+<div>
+    <h2>Employee Registration</h2>
+    <div>
+       First Name: <input type="text" placeholder="firstname" [(ngModel)]= "firstName" id="firstName">
+    </div>
+    <div>
+        Family Name:<input type="text" placeholder="FamilyName" [(ngModel)]= "familyName" id="familyName">
+    </div>
+    <div>
+         Gender:<input type="text" placeholder="Gender" [(ngModel)]= "gender" id="gender" >
+    </div>
+    <div>
+        MobileNumber:<input type=text placeholder="MobileNumber" [(ngModel)]= "mobileNumber" id="mobileNumber" >
+    </div>
+    <div>
+        Email Address:<input type="text" placeholder="email" [(ngModel)]= "email" class="email">
+    </div>
+    <div>
+        Date Of Birth:<input type="date" [(ngModel)]= "dateOfBirth">
+
+    </div>
+    <div>
+        Address:<input type="text" [(ngModel)]= "address" placeholder="address" id="address">
+    </div>
+    <div>
+        <input type="button" value="Register" (click)="register()" >
+    </div>
+</div>

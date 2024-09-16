@@ -1,0 +1,36 @@
+#header{
+    text-align:center;
+    padding:10px;
+    background-image:url("https://www.freewebheaders.com/wp-content/gallery/graduation/cache/silhouette-academic-students-on-yellow-header-background.jpg-nggid048593-ngg0dyn-1280x375x100-00f0w010c010r110f110r010t010.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 125px;
+
+}
+#menu{
+    text-align: right;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+li{
+    float:right;
+    margin-right: 20px;
+   
+
+}
+li a:hover{
+    background-color: #111;
+}
+

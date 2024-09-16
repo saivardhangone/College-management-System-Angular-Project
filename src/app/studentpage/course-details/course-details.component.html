@@ -1,0 +1,27 @@
+<input type="button" value="getcourses" (click)="getcourses()">
+<div>
+<table>
+    <thead>
+        <tr>
+            <th>
+                CourseName
+            </th>
+            <th>
+                Courseid
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody *ngFor=" let course of courses">
+        <td >
+            {{course.courseId}}
+        </td>
+        <td>
+            {{course.courseName}}
+        </td>
+        <td>
+            <input type="button" value="delete" (click)="deletecourse(course.courseName)" >
+        </td>
+    </tbody>
+</table>
+</div>

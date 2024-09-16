@@ -1,0 +1,33 @@
+
+<button (click)="result()">Student Results</button>
+<table>
+    <tr>
+        <th>
+            courseName
+            
+        </th>
+   
+        <th>
+            stuname
+        </th>
+        <th>
+            result
+        </th>
+    </tr>
+
+    <tbody *ngFor="let result of results">
+        <tr>
+         
+            <td>
+                {{result.id.courseName}}
+            </td>
+            <td>
+                {{result.stuName}}
+            </td>
+            <td>
+                {{result.result}}
+            </td>
+        </tr>
+    </tbody>
+
+</table>

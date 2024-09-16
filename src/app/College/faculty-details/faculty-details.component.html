@@ -1,0 +1,56 @@
+<div id="faculty">
+<h2>Faculty Details</h2>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Faculty Id
+            </th>
+            <th>
+                Faculty Name
+            </th>
+            <th>
+                gender
+            </th>
+            <th>
+                mobileNumber
+            </th>
+            <th>
+                email
+            </th>
+            <th>
+                dob
+            </th>
+            <th>
+                address
+            </th>
+        </tr>
+    </thead>
+    <tbody  >
+        <tr *ngFor="let facultydata of faculties" >
+            <td>
+               {{facultydata.facultyId}}
+            </td>
+            <td >
+                {{facultydata.employeeId.firstName}}{{facultydata.employeeId.familyName}}
+            </td>
+             <td>
+                {{facultydata.employeeId.gender}}
+            </td>
+            <td>
+                {{facultydata.employeeId.mobileNumber}}
+            </td>
+            <td>
+                {{facultydata.employeeId.email}}
+            </td>
+            <td>
+                {{facultydata.employeeId.dob |date}}
+            </td>
+            <td>
+                {{facultydata.employeeId.address}}
+            </td>
+             
+        </tr>
+    </tbody>
+</table>
+</div>
